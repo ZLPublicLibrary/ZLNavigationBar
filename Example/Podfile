@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'ZLNavigationBar_Example' do
+  pod 'ZLNavigationBar', :path => '../'
+
+  target 'ZLNavigationBar_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
