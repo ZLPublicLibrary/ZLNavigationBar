@@ -7,6 +7,7 @@
 //
 
 #import "ZLViewController.h"
+#import <ZLNavigationBar/ZLNavigationBar.h>
 
 @interface ZLViewController ()
 
@@ -14,16 +15,13 @@
 
 @implementation ZLViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    ZLNavigationBar *navigationBar = [ZLNavigationBar new];
+    [self.view addSubview:navigationBar];
+    navigationBar.actionBar.leftItem.click = ^{
+        
+    };
 }
 
 @end

@@ -1,42 +1,32 @@
-#
-# Be sure to run `pod lib lint ZLNavigationBar.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
-  s.name             = 'ZLNavigationBar'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of ZLNavigationBar.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.name             = 'ZLNavigationBar'
+
+  s.version          = '2.0.0'
+
+  s.summary          = '基础导航栏'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+提供一个基础的导航栏视图，结构简单。
                        DESC
 
-  s.homepage         = 'https://github.com/itzhaolei/ZLNavigationBar'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'itzhaolei' => 'itzhaolei@foxmail.com' }
-  s.source           = { :git => 'https://github.com/itzhaolei/ZLNavigationBar.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.homepage         = 'https://github.com/ZLPublicLibrary/ZLNavigationBar'
 
-  s.ios.deployment_target = '9.0'
+  s.license          = 'MIT'
 
-  s.source_files = 'ZLNavigationBar/Classes/**/*'
+  s.author           = { 'Mr.Zhao' => 'itzhaolei@foxmail.com' }
+
+  s.source           = { :git => 'https://github.com/ZLPublicLibrary/ZLNavigationBar.git', :tag => s.version }
+
+  s.ios.deployment_target = '8.0'
+
+  s.public_header_files = 'ZLNavigationBar/Classes/ZLNavigationBarHeader.h'
+  s.source_files = 'ZLNavigationBar/Classes/*.{h,m}'
   
-  # s.resource_bundles = {
-  #   'ZLNavigationBar' => ['ZLNavigationBar/Assets/*.png']
-  # }
+  s.resource_bundles = {
+      'ZLNavigationBar' => ['ZLNavigationBar/Assets/*']
+  }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.framework  = "UIKit"
+  
 end

@@ -1,0 +1,16 @@
+PODS:
+  - ZLNavigationBar (2.0.0)
+
+DEPENDENCIES:
+  - ZLNavigationBar (from `../`)
+
+EXTERNAL SOURCES:
+  ZLNavigationBar:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZLNavigationBar: 1639fc96a05552bdf5a6f079c6f39061ea4044ef
+
+PODFILE CHECKSUM: 7afde3e08f8ba34a1f1e7ea4f0f8b426b5db35f8
+
+COCOAPODS: 1.10.0
