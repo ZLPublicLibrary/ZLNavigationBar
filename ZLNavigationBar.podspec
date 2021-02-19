@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.summary          = '基础导航栏'
 
   s.description      = <<-DESC
-提供一个基础的导航栏视图，结构简单。
+提供一个基础的导航栏视图，结构简单，方便易用。
                        DESC
 
   s.homepage         = 'https://github.com/ZLPublicLibrary/ZLNavigationBar'
